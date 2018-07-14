@@ -19,7 +19,6 @@ humhub.module('comment', function (module, require, $) {
             that.addComment(response.html);
             that.getInput().val('').trigger('autosize.resize');
             richText.$.trigger('clear');
-            //richText.focus();
             that.getUpload().reset();
         }).catch(function (err) {
             module.log.error(err, true);
